@@ -21,8 +21,8 @@
         var data = results.data
 
         // data comes through as a simple array since simpleSheet is turned on
-        alert("Successfully processed " + data.length + " rows!")
-        document.getElementById("listing").innerHTML = "<strong>Foods:</strong> " + [ data[0].category, data[1].category, data[2].category ].join(", ");
+        //alert("Successfully processed " + data.length + " rows!")
+        document.getElementById("listing").innerHTML = "<strong>Categories:</strong> " + [ data[0].category, data[1].category, data[2].category ].join(", ");
         console.table(data);
       }
     </script>
