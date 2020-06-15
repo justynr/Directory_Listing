@@ -4,19 +4,106 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./styles/style.css">
-    <title>Document</title>
   </head>
   <body>
-    <div class="column">
-      <img class="logo" src="https://res.cloudinary.com/justynr/image/upload/v1591989493/SalonsByJC/TransLogo_V1_bbfl6k.png">
-    </div>
     <div class="row">
-      <div id="directory" class="wrapper column"></div>
-      <img class="map column" src="https://res.cloudinary.com/justynr/image/upload/v1591989934/SalonsByJC/JC-Map_V1_ukri3i.png">
+      <div id="directory" class="wrapper column">
+        <div class="box" id="Spa">
+          <div class="circle"><div class="title">Spa</div></div>
+          <div class="tenantList" id="Spadiv">
+          <p class="tenant">Suite 2 - HBE Med Spa</p>
+          <p class="tenant">Suite 7 - Skin Studio</p>
+          <p class="tenant">Suite 14 - Brow Blvd Inc</p>
+          <p class="tenant">Suite 14 - Effect MedAesthtics Centre</p>
+          <p class="tenant">Suite 19 - Advanced Skin Care</p>
+          <p class="tenant">Suite 20 - Let Them Notice</p>
+          <p class="tenant">Suite 20 - True Beauty Lounge</p>
+          <p class="tenant">Suite 21 - Key To Beauty</p>
+          <p class="tenant">Suite 23 - North Queen Wellness &amp; Beauty</p>
+          <p class="tenant">Suite 25 - Julia Skin Beauty</p>
+          <p class="tenant">Suite 27 - Canadian Beauty Boutique</p>
+          <p class="tenant">Suite 29 - Refined By T</p>
+          <p class="tenant">Suite 29 - Skin From Within</p>
+          <p class="tenant">Suite 30 - Just Smile Designs</p>
+          <p class="tenant">Suite 33 - Amethyst Oasis</p>
+          <p class="tenant">Suite 45 - Angela Superfacial Clinic</p>
+          <p class="tenant">Suite 50 - HBS Beauty Spa</p>
+          <p class="tenant">Suite 51 - Lavender Brow &amp; Beauty</p>
+        </div>
       </div>
+        <div class="box" id="Other">
+          <div class="circle"><div class="title">Other</div></div>
+          <div class="tenantList" id="Otherdiv">
+          <p class="tenant">Suite 18 - Big 6 Lashes</p>
+          <p class="tenant">Suite 22 - Eye The Brows</p>
+          <p class="tenant">Suite 23 - North Queen Wellness &amp; Beauty</p>
+          <p class="tenant">Suite 25 - Julia Skin Beauty</p>
+          <p class="tenant">Suite 28 - Nail Goddess Academy</p>
+          <p class="tenant">Suite 41 - El'mai Studio</p>
+          <p class="tenant">Suite 44 - Sharon Massage Therapy</p>
+          <p class="tenant">Suite 45 - Angela Superfacial Clinic</p>
+          <p class="tenant">Suite 50 - HBS Beauty Spa</p>
+          <p class="tenant">Suite 51 - Lavender Brow &amp; Beauty</p>
+        </div>
+        <div class="circle"><div class="title">Barber</div></div>
+        <div class="tenantList" id="Barberdiv">
+        <p class="tenant">Suite 4 - Kuhler</p>
+        <p class="tenant">Suite 12 - Ocean Wavy Barbers</p>
+        <p class="tenant">Suite 41 - Evolve</p>
+        <p class="tenant">Suite 46 - Stef.hairstylist</p>
+      </div>
+      <div class="circle">
+        <div class="title">Chiro</div>
+      </div>
+      <div class="tenantList" id="Chirodiv">
+      <p class="tenant">Suite 44 - Gianna Chiropractic</p>
+    </div>
+      </div>
+        <div class="box" id="Salon">
+          <div class="circle" id="salonCircle">
+            <div class="title">Salon</div>
+          </div>
+          <div class="tenantList" id="salondiv">
+          <p class="tenant">Suite 1 - Hair By Stavro</p>
+          <p class="tenant">Suite 4 - Dollhouse</p>
+          <p class="tenant">Suite 4 - Kuhler</p>
+          <p class="tenant">Suite 5 - Kalon Hair Society</p>
+          <p class="tenant">Suite 6 - Ania Wazny Creative</p>
+          <p class="tenant">Suite 8 - Hair Addictz Studio</p>
+          <p class="tenant">Suite 9 - Giselle Joy Studio</p>
+          <p class="tenant">Suite 10 - Hair By Sonia</p>
+          <p class="tenant">Suite 11 - Chroma Salon</p>
+          <p class="tenant">Suite 13 - Natural Curly Hair Haven</p>
+          <p class="tenant">Suite 15 - Hair Illusions</p>
+          <p class="tenant">Suite 16 - Raw Hair Studio</p>
+          <p class="tenant">Suite 26 - Virtuous Hair</p>
+          <p class="tenant">Suite 30 - Virtue Hair</p>
+          <p class="tenant">Suite 30 - Just Smile Designs</p>
+          <p class="tenant">Suite 31 - Ashley Bell Hairstylist</p>
+          <p class="tenant">Suite 34 - All In One Beauty</p>
+          <p class="tenant">Suite 35 - Pluss Hair</p>
+          <p class="tenant">Suite 36 - Gloss Studio</p>
+          <p class="tenant">Suite 38 - Jennifer Hair Design</p>
+          <p class="tenant">Suite 40 - Meraki Hair Studio</p>
+          <p class="tenant">Suite 41 - El'mai Studio</p>
+          <p class="tenant">Suite 43 - Sandra Mackenzie Design</p>
+          <p class="tenant">Suite 46 - Stef.hairstylist</p>
+          <p class="tenant">Suite 47 - Hair By Malina</p>
+          </div>
+        </div>
+      </div>
+      
+      <img class="map column" src="https://res.cloudinary.com/justynr/image/upload/v1591989934/SalonsByJC/JC-Map_V1_ukri3i.png">
+      <div class="row"> 
+        <img class="logo" src="https://res.cloudinary.com/justynr/image/upload/v1591989493/SalonsByJC/TransLogo_V1_bbfl6k.png"> 
+      </div>
+
+    </div>
           <!-- <canvas id="suiteCanvas" width="200" height="100"></canvas> -->
       </div>
-    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/PapaParse/5.1.0/papaparse.min.js"></script>
-    <script src="./scripts/script.js"></script>
+    <!-- <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/PapaParse/5.1.0/papaparse.min.js"></script> -->
+    <!-- <script src="./scripts/script.js"></script> -->
+
+
   </body>
 </html>

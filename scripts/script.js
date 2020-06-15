@@ -509,7 +509,7 @@ function fillCategory(i) {
     const newDiv = document.createElement("p");
     newDiv.setAttribute('class', 'tenant');
     //newDiv.setAttribute('id', category)
-    const text = document.createTextNode(`${companyName} Suite ${suite}`);
+    const text = document.createTextNode(`Suite ${suite} - ${companyName}`);
     newDiv.appendChild(text);
     const element = document.getElementById(catList[j]);
     element.appendChild(newDiv);
@@ -524,7 +524,7 @@ function addCategory(i) {
   const element = document.getElementById("directory");
   element.appendChild(newDiv);
 
-  const titleDiv = document.createElement("title");
+  const titleDiv = document.createElement("div");
   titleDiv.setAttribute('class', 'circle');
   titleDiv.setAttribute('id', `${category}Title`)
   const text = document.createTextNode(category);
