@@ -488,402 +488,411 @@ const suites = [
     "suite": 1,
     "count": 0,
     "location": [
-      190,
-      470
+      240,
+      580
     ]
   },
   {
     "suite": 2,
     "count": 0,
     "location": [
-      205,
-      555
+      270,
+      695
     ]
   },
   {
     "suite": 3,
     "count": 0,
     "location": [
-      245,
-      470
+      310,
+      580
     ]
   },
   {
     "suite": 4,
     "count": 0,
     "location": [
-      305,
-      470
+      390,
+      580
     ]
   },
   {
     "suite": 5,
     "count": 0,
     "location": [
-      275,
-      555
+      350,
+      695
     ]
   },
   {
     "suite": 6,
     "count": 0,
     "location": [
-      335,
-      555
+      425,
+      695
     ]
   },
   {
     "suite": 7,
     "count": 0,
     "location": [
-      385,
-      535
+      490,
+      665
     ]
   },
   {
     "suite": 8,
     "count": 0,
     "location": [
-      415,
-      465
+      525,
+      580
     ]
   },
   {
     "suite": 9,
     "count": 0,
     "location": [
-      440,
-      410
+      555,
+      510
     ]
   },
   {
     "suite": 10,
     "count": 0,
     "location": [
-      465,
-      360
+      590,
+      450
     ]
   },
   {
     "suite": 11,
     "count": 0,
     "location": [
-      490,
-      310
+      620,
+      390
     ]
   },
   {
     "suite": 12,
     "count": 0,
     "location": [
-      510,
-      250
+      650,
+      310
     ]
   },
   {
     "suite": 13,
     "count": 0,
     "location": [
-      410,
-      260
+      520,
+      320
     ]
   },
   {
     "suite": 14,
     "count": 0,
     "location": [
-      -10,
-      -10
+      535,
+      235
     ]
   },
   {
     "suite": 15,
     "count": 0,
     "location": [
-      -10,
-      -10
+      650,
+      250
     ]
   },
   {
     "suite": 16,
     "count": 0,
     "location": [
-      -10,
-      -10
+      650,
+      165
     ]
   },
   {
     "suite": 17,
     "count": 0,
     "location": [
-      -10,
-      -10
+      535,
+      165
     ]
   },
   {
     "suite": 18,
     "count": 0,
     "location": [
-      -10,
-      -10
+      730,
+      165
     ]
   },
   {
     "suite": 19,
     "count": 0,
     "location": [
-      -10,
-      -10
+      770,
+      60
     ]
   },
   {
     "suite": 20,
     "count": 0,
     "location": [
-      -10,
-      -10
+      705,
+      60
     ]
   },
   {
     "suite": 21,
     "count": 0,
     "location": [
-      -10,
-      -10
+      620,
+      60
     ]
   },
   {
     "suite": 22,
     "count": 0,
     "location": [
-      -10,
-      -10
+      540,
+      65
     ]
   },
   {
     "suite": 23,
     "count": 0,
     "location": [
-      -10,
-      -10
+      460,
+      60
     ]
   },
   {
     "suite": 24,
     "count": 0,
     "location": [
-      -10,
-      -10
+      390,
+      60
     ]
   },
   {
     "suite": 25,
     "count": 0,
     "location": [
-      -10,
-      -10
+      320,
+      60
     ]
   },
   {
     "suite": 26,
     "count": 0,
     "location": [
-      -10,
-      -10
+      235,
+      160
     ]
   },
   {
     "suite": 27,
     "count": 0,
     "location": [
-      -10,
-      -10
+      40,
+      60
     ]
   },
   {
     "suite": 28,
     "count": 0,
     "location": [
-      -10,
-      -10
+      160,
+      160
     ]
   },
   {
     "suite": 29,
     "count": 0,
     "location": [
-      -10,
-      -10
+      40,
+      145
     ]
   },
   {
     "suite": 30,
     "count": 0,
     "location": [
-      -10,
-      -10
+      40,
+      240
     ]
   },
   {
     "suite": 31,
     "count": 0,
     "location": [
-      -10,
-      -10
+      160,
+      235
     ]
   },
   {
     "suite": 32,
     "count": 0,
     "location": [
-      -10,
-      -10
+      40,
+      305
     ]
   },
   {
     "suite": 33,
     "count": 0,
     "location": [
-      -10,
-      -10
+      160,
+      315
     ]
   },
   {
     "suite": 34,
     "count": 0,
     "location": [
-      -10,
-      -10
+      40,
+      390
     ]
   },
   {
     "suite": 35,
     "count": 0,
     "location": [
-      -10,
-      -10
+      40,
+      465
     ]
   },
   {
     "suite": 36,
     "count": 0,
     "location": [
-      -10,
-      -10
+      40,
+      535
     ]
   },
   {
     "suite": 37,
     "count": 0,
     "location": [
-      -10,
-      -10
+      160,
+      580
     ]
   },
   {
     "suite": 38,
     "count": 0,
     "location": [
-      -10,
-      -10
+      40,
+      610
     ]
   },
   {
     "suite": 39,
     "count": 0,
     "location": [
-      -10,
-      -10
+      40,
+      690
     ]
   },
   {
     "suite": 40,
     "count": 0,
     "location": [
-      -10,
-      -10
+      160,
+      390
     ]
   },
   {
     "suite": 41,
     "count": 0,
     "location": [
-      -10,
-      -10
+      160,
+      510
     ]
   },
   {
     "suite": 42,
     "count": 0,
     "location": [
-      -10,
-      -10
+      235,
+      510
     ]
   },
   {
     "suite": 43,
     "count": 0,
     "location": [
-      -10,
-      -10
+      235,
+      390
     ]
   },
   {
     "suite": 44,
     "count": 0,
     "location": [
-      -10,
-      -10
+      345,
+      390
     ]
   },
   {
     "suite": 45,
     "count": 0,
     "location": [
-      -10,
-      -10
+      305,
+      510
     ]
   },
   {
     "suite": 46,
     "count": 0,
     "location": [
-      -10,
-      -10
+      375,
+      510
     ]
   },
   {
     "suite": 47,
     "count": 0,
     "location": [
-      -10,
-      -10
+      445,
+      515
     ]
   },
   {
     "suite": 48,
     "count": 0,
     "location": [
-      -10,
-      -10
+      475,
+      390
     ]
   },
   {
     "suite": 49,
     "count": 0,
     "location": [
-      -10,
-      -10
+      460,
+      320
     ]
   },
   {
     "suite": 50,
     "count": 0,
     "location": [
-      -10,
-      -10
+      460,
+      235 
+    ]
+  },
+  {
+    "suite": 51,
+    "count": 0,
+    "location": [
+      460,
+      165    
     ]
   }
+
 ];
 
 function init() {
@@ -902,6 +911,9 @@ function parse() {
   }
   for (var i = 0; i < data.length; i++) {
     fillCategory(i);
+    
+  }
+  for (var i = 0; i < suites.length; i++) {
     AddressDraw(i);
   }
 };
@@ -963,7 +975,6 @@ function drawOnCanvas(dotX, dotY, color) {
 function AddressDraw(i) {
   const dotX = suites[i].location[0];
   const dotY = suites[i].location[1];
-  console.log("DotX", dotX)
   var c = document.getElementById("mapCanvas");
   var ctx = c.getContext("2d");
   ctx.beginPath();
