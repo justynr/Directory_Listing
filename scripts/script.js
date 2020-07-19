@@ -475,16 +475,416 @@ const data = [
   }
 ]
 
-const suiteLocation = [
-  [
-    22,
-    22
-  ],
-  [
-    44,
-    44
-  ]
-]
+const suites = [
+  {
+    "suite": 0,
+    "count": 0,
+    "location": [
+      -10,
+      -10
+    ]
+  },
+  {
+    "suite": 1,
+    "count": 0,
+    "location": [
+      190,
+      470
+    ]
+  },
+  {
+    "suite": 2,
+    "count": 0,
+    "location": [
+      205,
+      555
+    ]
+  },
+  {
+    "suite": 3,
+    "count": 0,
+    "location": [
+      245,
+      470
+    ]
+  },
+  {
+    "suite": 4,
+    "count": 0,
+    "location": [
+      305,
+      470
+    ]
+  },
+  {
+    "suite": 5,
+    "count": 0,
+    "location": [
+      275,
+      555
+    ]
+  },
+  {
+    "suite": 6,
+    "count": 0,
+    "location": [
+      335,
+      555
+    ]
+  },
+  {
+    "suite": 7,
+    "count": 0,
+    "location": [
+      385,
+      535
+    ]
+  },
+  {
+    "suite": 8,
+    "count": 0,
+    "location": [
+      415,
+      465
+    ]
+  },
+  {
+    "suite": 9,
+    "count": 0,
+    "location": [
+      440,
+      410
+    ]
+  },
+  {
+    "suite": 10,
+    "count": 0,
+    "location": [
+      465,
+      360
+    ]
+  },
+  {
+    "suite": 11,
+    "count": 0,
+    "location": [
+      490,
+      310
+    ]
+  },
+  {
+    "suite": 12,
+    "count": 0,
+    "location": [
+      510,
+      250
+    ]
+  },
+  {
+    "suite": 13,
+    "count": 0,
+    "location": [
+      410,
+      260
+    ]
+  },
+  {
+    "suite": 14,
+    "count": 0,
+    "location": [
+      -10,
+      -10
+    ]
+  },
+  {
+    "suite": 15,
+    "count": 0,
+    "location": [
+      -10,
+      -10
+    ]
+  },
+  {
+    "suite": 16,
+    "count": 0,
+    "location": [
+      -10,
+      -10
+    ]
+  },
+  {
+    "suite": 17,
+    "count": 0,
+    "location": [
+      -10,
+      -10
+    ]
+  },
+  {
+    "suite": 18,
+    "count": 0,
+    "location": [
+      -10,
+      -10
+    ]
+  },
+  {
+    "suite": 19,
+    "count": 0,
+    "location": [
+      -10,
+      -10
+    ]
+  },
+  {
+    "suite": 20,
+    "count": 0,
+    "location": [
+      -10,
+      -10
+    ]
+  },
+  {
+    "suite": 21,
+    "count": 0,
+    "location": [
+      -10,
+      -10
+    ]
+  },
+  {
+    "suite": 22,
+    "count": 0,
+    "location": [
+      -10,
+      -10
+    ]
+  },
+  {
+    "suite": 23,
+    "count": 0,
+    "location": [
+      -10,
+      -10
+    ]
+  },
+  {
+    "suite": 24,
+    "count": 0,
+    "location": [
+      -10,
+      -10
+    ]
+  },
+  {
+    "suite": 25,
+    "count": 0,
+    "location": [
+      -10,
+      -10
+    ]
+  },
+  {
+    "suite": 26,
+    "count": 0,
+    "location": [
+      -10,
+      -10
+    ]
+  },
+  {
+    "suite": 27,
+    "count": 0,
+    "location": [
+      -10,
+      -10
+    ]
+  },
+  {
+    "suite": 28,
+    "count": 0,
+    "location": [
+      -10,
+      -10
+    ]
+  },
+  {
+    "suite": 29,
+    "count": 0,
+    "location": [
+      -10,
+      -10
+    ]
+  },
+  {
+    "suite": 30,
+    "count": 0,
+    "location": [
+      -10,
+      -10
+    ]
+  },
+  {
+    "suite": 31,
+    "count": 0,
+    "location": [
+      -10,
+      -10
+    ]
+  },
+  {
+    "suite": 32,
+    "count": 0,
+    "location": [
+      -10,
+      -10
+    ]
+  },
+  {
+    "suite": 33,
+    "count": 0,
+    "location": [
+      -10,
+      -10
+    ]
+  },
+  {
+    "suite": 34,
+    "count": 0,
+    "location": [
+      -10,
+      -10
+    ]
+  },
+  {
+    "suite": 35,
+    "count": 0,
+    "location": [
+      -10,
+      -10
+    ]
+  },
+  {
+    "suite": 36,
+    "count": 0,
+    "location": [
+      -10,
+      -10
+    ]
+  },
+  {
+    "suite": 37,
+    "count": 0,
+    "location": [
+      -10,
+      -10
+    ]
+  },
+  {
+    "suite": 38,
+    "count": 0,
+    "location": [
+      -10,
+      -10
+    ]
+  },
+  {
+    "suite": 39,
+    "count": 0,
+    "location": [
+      -10,
+      -10
+    ]
+  },
+  {
+    "suite": 40,
+    "count": 0,
+    "location": [
+      -10,
+      -10
+    ]
+  },
+  {
+    "suite": 41,
+    "count": 0,
+    "location": [
+      -10,
+      -10
+    ]
+  },
+  {
+    "suite": 42,
+    "count": 0,
+    "location": [
+      -10,
+      -10
+    ]
+  },
+  {
+    "suite": 43,
+    "count": 0,
+    "location": [
+      -10,
+      -10
+    ]
+  },
+  {
+    "suite": 44,
+    "count": 0,
+    "location": [
+      -10,
+      -10
+    ]
+  },
+  {
+    "suite": 45,
+    "count": 0,
+    "location": [
+      -10,
+      -10
+    ]
+  },
+  {
+    "suite": 46,
+    "count": 0,
+    "location": [
+      -10,
+      -10
+    ]
+  },
+  {
+    "suite": 47,
+    "count": 0,
+    "location": [
+      -10,
+      -10
+    ]
+  },
+  {
+    "suite": 48,
+    "count": 0,
+    "location": [
+      -10,
+      -10
+    ]
+  },
+  {
+    "suite": 49,
+    "count": 0,
+    "location": [
+      -10,
+      -10
+    ]
+  },
+  {
+    "suite": 50,
+    "count": 0,
+    "location": [
+      -10,
+      -10
+    ]
+  }
+];
 
 function init() {
   Papa.parse(public_spreadsheet_url_suites, {
@@ -502,6 +902,7 @@ function parse() {
   }
   for (var i = 0; i < data.length; i++) {
     fillCategory(i);
+    AddressDraw(i);
   }
 };
 
@@ -553,13 +954,45 @@ function drawOnCanvas(dotX, dotY, color) {
   const canvas = document.getElementById("mapCanvas");
   const ctx = canvas.getContext("2d");
   ctx.beginPath();
-  ctx.arc(dotX,dotY,200,0,2*Math.PI);
-  ctx.fillStyle = 'orange';
+  ctx.arc(dotX,dotY,10,0,2*Math.PI);
+  ctx.fillStyle = '#FF0000';
   ctx.fill();
-  console.log(suiteLocation[1][1])
+  //console.log(suites[1][1])
 }
 
+function AddressDraw(i) {
+  const dotX = suites[i].location[0];
+  const dotY = suites[i].location[1];
+  console.log("DotX", dotX)
+  var c = document.getElementById("mapCanvas");
+  var ctx = c.getContext("2d");
+  ctx.beginPath();
+  ctx.arc(dotX, dotY, 10, 0, 2 * Math.PI);
+  ctx.fillStyle = "#FF0000";
+  ctx.fill();
+  //ctx.stroke();
+}
+
+
+
+function ResizeCanvas() {
+  const canvas = document.getElementById("mapCanvas");
+  // Lookup the size the browser is displaying the canvas.
+  var displayWidth  = canvas.clientWidth;
+  var displayHeight = canvas.clientHeight;
+ 
+  // Check if the canvas is not the same size.
+  if (canvas.width  != displayWidth ||
+      canvas.height != displayHeight) {
+ 
+    // Make the canvas the same size
+    canvas.width  = displayWidth;
+    canvas.height = displayHeight;
+  }
+}
+
+ResizeCanvas();
 parse();
 
 
-drawOnCanvas(suiteLocation[1][1],suiteLocation[1][2], 'orange');
+//drawOnCanvas(suiteLocation[1][1],suiteLocation[1][2], 'orange');
