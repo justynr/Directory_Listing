@@ -5,24 +5,29 @@ const public_spreadsheet_url = "https://docs.google.com/spreadsheets/d/e/2PACX-1
 const masterData = [
   {
     "category":"Spa",
-    "color":"purple"
+    "color":"yellow",
+    "column": 1
   },
   {
     "category":"Other",
-    "color":"pink"
-  },
-  {
-    "category":"Salon",
-    "color":"red"
+    "color":"greenyellow",
+    "column": 2
   },
   {
     "category":"Barber",
-    "color":"blue"
+    "color":"cyan",
+    "column": 2
   },
   {
     "category":"Chiro",
-    "color":"orange"
+    "color":"crimson",
+    "column": 2
   },
+  {
+    "category":"Salon",
+    "color":"fuchsia",
+    "column": 3
+  }
 
 ]
 
@@ -470,7 +475,16 @@ const data = [
   }
 ]
 
-
+const suiteLocation = [
+  [
+    22,
+    22
+  ],
+  [
+    44,
+    44
+  ]
+]
 
 function init() {
   Papa.parse(public_spreadsheet_url_suites, {
@@ -478,17 +492,6 @@ function init() {
     header: true,
     complete: showInfo
   })
-}
-
-//window.addEventListener('DOMContentLoaded', init)
-
-function showInfo(results) {
-  const data = results.data
-
-  // data comes through as a simple array since simpleSheet is turned on
-  //alert("Successfully processed " + data.length + " rows!")
-  //document.getElementById("listing").innerHTML = "<strong>Categories:</strong> " + [ data[0].category, data[1].category, data[2].category ].join(", ");
-  console.table(data);
 }
 
 function parse() {
@@ -511,29 +514,52 @@ function fillCategory(i) {
     //newDiv.setAttribute('id', category)
     const text = document.createTextNode(`Suite ${suite} - ${companyName}`);
     newDiv.appendChild(text);
-    const element = document.getElementById(catList[j]);
+    const element = document.getElementById(`${catList[j]}List`);
     element.appendChild(newDiv);
   }
 }
 
 function addCategory(i) {
-  const {category, color} = masterData[i]
+  const {category, color, column} = masterData[i]
+/*
   const newDiv = document.createElement("div");
   newDiv.setAttribute('class', 'box');
   newDiv.setAttribute('id', category)
   const element = document.getElementById("directory");
   element.appendChild(newDiv);
-
+*/
+   
+  const elementTitle = document.getElementById(`column${column}`);
+  const listDiv = document.createElement("div");
+  const circleDiv = document.createElement("div");
   const titleDiv = document.createElement("div");
-  titleDiv.setAttribute('class', 'circle');
-  titleDiv.setAttribute('id', `${category}Title`)
+
+  listDiv.setAttribute('class', 'listing');
+  circleDiv.setAttribute('class', 'circle');
+
+  titleDiv.setAttribute('class', 'title');
+  listDiv.setAttribute('id', `${category}List`)
   const text = document.createTextNode(category);
   titleDiv.appendChild(text);
-  const elementTitle = document.getElementById(category);
-  elementTitle.appendChild(titleDiv);
-  const circ = document.querySelector('title:before');
+  circleDiv.appendChild(titleDiv);
+  listDiv.appendChild(circleDiv);
+  elementTitle.appendChild(listDiv);
+  circleDiv.style.backgroundColor = color;
 }
 
 //window.addEventListener('DOMContentLoaded', parse);
 
+function drawOnCanvas(dotX, dotY, color) {
+  const canvas = document.getElementById("mapCanvas");
+  const ctx = canvas.getContext("2d");
+  ctx.beginPath();
+  ctx.arc(dotX,dotY,200,0,2*Math.PI);
+  ctx.fillStyle = 'orange';
+  ctx.fill();
+  console.log(suiteLocation[1][1])
+}
+
 parse();
+
+
+drawOnCanvas(suiteLocation[1][1],suiteLocation[1][2], 'orange');
