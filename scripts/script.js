@@ -945,7 +945,7 @@ const suites = [
   }
 ]
 
-console.log(suites)
+let data
 
 function init() {
   Papa.parse(public_spreadsheet_url_suites, {
@@ -957,6 +957,7 @@ function init() {
 
 var masterCategory = [];
 function parse() {
+  init();
   ResizeCanvas();
   for (var i = 0; i < masterData.length; i++) {
     masterCategory.push(masterData[i].category);
@@ -1031,7 +1032,7 @@ function AddressDraw(i, color, category) {
     ctx.fill();
   }
 }
-console.log(suites)
+
 function ResizeCanvas() {
   const canvas = document.getElementById("mapCanvas");
   // Lookup the size the browser is displaying the canvas.
