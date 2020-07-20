@@ -1,8 +1,8 @@
-const public_spreadsheet_url_suites = 'https://docs.google.com/spreadsheets/d/e/2PACX-1vTNik9F_6vPbPKCGneA6qMgExrkJhyl6MrzJhVj8PrK_T_EqqrFsgFJtPALhGkSw6mnX_nSuhknqZ0z/pubhtml?gid=0&single=true';
-const public_spreadsheet_url_master = 'https://docs.google.com/spreadsheets/d/e/2PACX-1vTNik9F_6vPbPKCGneA6qMgExrkJhyl6MrzJhVj8PrK_T_EqqrFsgFJtPALhGkSw6mnX_nSuhknqZ0z/pubhtml?gid=941655149&single=true';
+const public_spreadsheet_url_suites = 'https://docs.google.com/spreadsheets/d/e/2PACX-1vTNik9F_6vPbPKCGneA6qMgExrkJhyl6MrzJhVj8PrK_T_EqqrFsgFJtPALhGkSw6mnX_nSuhknqZ0z/pub?gid=0&single=true&output=csv';
+const public_spreadsheet_url_master = 'https://docs.google.com/spreadsheets/d/e/2PACX-1vTNik9F_6vPbPKCGneA6qMgExrkJhyl6MrzJhVj8PrK_T_EqqrFsgFJtPALhGkSw6mnX_nSuhknqZ0z/pub?gid=941655149&single=true&output=csv';
 const public_spreadsheet_url = "https://docs.google.com/spreadsheets/d/e/2PACX-1vTNik9F_6vPbPKCGneA6qMgExrkJhyl6MrzJhVj8PrK_T_EqqrFsgFJtPALhGkSw6mnX_nSuhknqZ0z/pubhtml";
 
-const masterData = [
+const StaticmasterData = [
   {
     "category":"Spa",
     "color":"orange",
@@ -945,36 +945,45 @@ const suites = [
   }
 ]
 
-let data;
+
 const thisVersion = 2;
 
-function init() {
-  Papa.parse(public_spreadsheet_url, {
-    download: true,
-    header: true,
-    complete: function(results) {
-      data = results.data;
-    }
-  })
+var data;
+var masterData;
+async function init() {
+  masterData = await parseData(public_spreadsheet_url_master);
+  data = await parseData(public_spreadsheet_url_suites);
+  //await getMasterData();
+  await parse(data);
 }
 
+const parseData = (file) => {
+  return new Promise((resolve) => {
+    Papa.parse(file, {
+      download: true,
+      header: true,
+      complete: (results) => {
+        //console.log(results);
+        resolve(results.data);
+      }
+    });
+  });
+};
+
+
 var masterCategory = [];
-async function parse() {
-  await init();
+
+
+
+function parse(data) {
   ResizeCanvas();
   for (var i = 0; i < masterData.length; i++) {
-    masterCategory.push(masterData[i].category);
-    addCategory(i);
-  }
+    masterCategory.push(masterData[i].mastercategory);
+    addCategory(i, masterData);
+  };
   for (var i = 0; i < data.length; i++) {
     fillCategory(i);
-  }
-
-  //   for (var i = 0; i < suites.length; i++) {
-  //   AddressDraw(i, 'blue', 'cat');
-  //   //AddressDrawBlue(i);
-  // }
-
+  };
 };
 
 function fillCategory(i) {
@@ -998,7 +1007,7 @@ function fillCategory(i) {
 }
 
 function addCategory(i) {
-  const {category, color, column} = masterData[i]
+  const {mastercategory, mastercolor, column} = masterData[i]
  
   const elementTitle = document.getElementById(`column${column}`);
   const listDiv = document.createElement("div");
@@ -1009,13 +1018,13 @@ function addCategory(i) {
   circleDiv.setAttribute('class', 'circle');
 
   titleDiv.setAttribute('class', 'title');
-  listDiv.setAttribute('id', `${category}List`)
-  const text = document.createTextNode(category);
+  listDiv.setAttribute('id', `${mastercategory}List`)
+  const text = document.createTextNode(mastercategory);
   titleDiv.appendChild(text);
   circleDiv.appendChild(titleDiv);
   listDiv.appendChild(circleDiv);
   elementTitle.appendChild(listDiv);
-  circleDiv.style.backgroundColor = color;
+  circleDiv.style.backgroundColor = mastercolor;
 }
 
 function AddressDraw(i, color, category) {
@@ -1053,10 +1062,10 @@ function ResizeCanvas() {
 }
 
 function GetColor(category) {
-  const cat = masterData.find(el => el.category == category);
-  const color = cat.color;
+  const cat = masterData.find(el => el.mastercategory == category);
+  const color = cat.mastercolor;
   return(color);
 }
 
-
-window.addEventListener('DOMContentLoaded', parse);
+// init();
+window.addEventListener('DOMContentLoaded', init);
