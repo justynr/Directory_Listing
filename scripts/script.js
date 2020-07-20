@@ -913,35 +913,33 @@ function parse() {
     fillCategory(i);
     
   }
-  for (var i = 0; i < suites.length; i++) {
-    AddressDraw(i);
-  }
+  // for (var i = 0; i < suites.length; i++) {
+  //   AddressDraw(i, 'blue');
+  //   //AddressDrawBlue(i);
+  // }
 };
 
 function fillCategory(i) {
   const { category, companyName, suite } = data[i];
   const catList = category.replace(/\s/g,'').split(',');
   for (var j = 0; j < catList.length; j++) {
+    //Render Text
     const newDiv = document.createElement("p");
     newDiv.setAttribute('class', 'tenant');
-    //newDiv.setAttribute('id', category)
     const text = document.createTextNode(`Suite ${suite} - ${companyName}`);
     newDiv.appendChild(text);
     const element = document.getElementById(`${catList[j]}List`);
     element.appendChild(newDiv);
+
+    //Draw Dots
+    const color = GetColor(catList[j]);
+    AddressDraw(suite, color);
   }
 }
 
 function addCategory(i) {
   const {category, color, column} = masterData[i]
-/*
-  const newDiv = document.createElement("div");
-  newDiv.setAttribute('class', 'box');
-  newDiv.setAttribute('id', category)
-  const element = document.getElementById("directory");
-  element.appendChild(newDiv);
-*/
-   
+ 
   const elementTitle = document.getElementById(`column${column}`);
   const listDiv = document.createElement("div");
   const circleDiv = document.createElement("div");
@@ -972,19 +970,19 @@ function drawOnCanvas(dotX, dotY, color) {
   //console.log(suites[1][1])
 }
 
-function AddressDraw(i) {
-  const dotX = suites[i].location[0];
+function AddressDraw(i, color) {
+  let dotX = suites[i].location[0];
   const dotY = suites[i].location[1];
+  const count = suites[i].count
+  dotX += (count * 10)
+  suites[i].count += 1;
   var c = document.getElementById("mapCanvas");
   var ctx = c.getContext("2d");
   ctx.beginPath();
   ctx.arc(dotX, dotY, 10, 0, 2 * Math.PI);
-  ctx.fillStyle = "#FF0000";
+  ctx.fillStyle = color;
   ctx.fill();
-  //ctx.stroke();
 }
-
-
 
 function ResizeCanvas() {
   const canvas = document.getElementById("mapCanvas");
@@ -1000,6 +998,13 @@ function ResizeCanvas() {
     canvas.width  = displayWidth;
     canvas.height = displayHeight;
   }
+}
+
+function GetColor(category) {
+  const cat = masterData.find(el => el.category == category);
+  const color = cat.color;
+  return(color);
+  //console.log(color);
 }
 
 ResizeCanvas();
