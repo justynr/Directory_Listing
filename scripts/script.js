@@ -946,8 +946,9 @@ const suites = [
 ]
 
 let data;
+const version = 1;
 
-function init() {
+async function init() {
   Papa.parse(public_spreadsheet_url_suites, {
     download: true,
     header: true,
@@ -959,7 +960,7 @@ function init() {
 
 var masterCategory = [];
 function parse() {
-  init();
+  await init();
   ResizeCanvas();
   for (var i = 0; i < masterData.length; i++) {
     masterCategory.push(masterData[i].category);
