@@ -1,11 +1,11 @@
 const public_spreadsheet_url_suites = 'https://docs.google.com/spreadsheets/d/e/2PACX-1vTNik9F_6vPbPKCGneA6qMgExrkJhyl6MrzJhVj8PrK_T_EqqrFsgFJtPALhGkSw6mnX_nSuhknqZ0z/pubhtml?gid=0&single=true';
 const public_spreadsheet_url_master = 'https://docs.google.com/spreadsheets/d/e/2PACX-1vTNik9F_6vPbPKCGneA6qMgExrkJhyl6MrzJhVj8PrK_T_EqqrFsgFJtPALhGkSw6mnX_nSuhknqZ0z/pubhtml?gid=941655149&single=true';
-const public_spreadsheet_url = "https://docs.google.com/spreadsheets/d/e/2PACX-1vTNik9F_6vPbPKCGneA6qMgExrkJhyl6MrzJhVj8PrK_T_EqqrFsgFJtPALhGkSw6mnX_nSuhknqZ0z/pubhtml";
+//const public_spreadsheet_url = "https://docs.google.com/spreadsheets/d/e/2PACX-1vTNik9F_6vPbPKCGneA6qMgExrkJhyl6MrzJhVj8PrK_T_EqqrFsgFJtPALhGkSw6mnX_nSuhknqZ0z/pubhtml";
 
 const masterData = [
   {
     "category":"Spa",
-    "color":"yellow",
+    "color":"orange",
     "column": 1
   },
   {
@@ -486,19 +486,21 @@ const suites = [
   },
   {
     "suite": 1,
-    "count": 0,
+    "count": 1,
     "location": [
       240,
       580
-    ]
+    ],
+    "categories": []
   },
   {
     "suite": 2,
-    "count": 0,
+    "count": 1,
     "location": [
       270,
       695
-    ]
+    ],
+    "categories": []
   },
   {
     "suite": 3,
@@ -506,111 +508,125 @@ const suites = [
     "location": [
       310,
       580
-    ]
+    ],
+    "categories": []
   },
   {
     "suite": 4,
-    "count": 0,
+    "count": 3,
     "location": [
       390,
       580
-    ]
+    ],
+    "categories": []
   },
   {
     "suite": 5,
-    "count": 0,
+    "count": 1,
     "location": [
       350,
       695
-    ]
+    ],
+    "categories": []
   },
   {
     "suite": 6,
-    "count": 0,
+    "count": 1,
     "location": [
       425,
       695
-    ]
+    ],
+    "categories": []
   },
   {
     "suite": 7,
-    "count": 0,
+    "count": 1,
     "location": [
       490,
       665
-    ]
+    ],
+    "categories": []
   },
   {
     "suite": 8,
-    "count": 0,
+    "count": 1,
     "location": [
       525,
       580
-    ]
+    ],
+    "categories": []
   },
   {
     "suite": 9,
-    "count": 0,
+    "count": 1,
     "location": [
       555,
       510
-    ]
+    ],
+    "categories": []
   },
   {
     "suite": 10,
-    "count": 0,
+    "count": 1,
     "location": [
       590,
       450
-    ]
+    ],
+    "categories": []
   },
   {
     "suite": 11,
-    "count": 0,
+    "count": 1,
     "location": [
       620,
       390
-    ]
+    ],
+    "categories": []
   },
   {
     "suite": 12,
-    "count": 0,
+    "count": 1,
     "location": [
       650,
       310
-    ]
+    ],
+    "categories": []
   },
   {
     "suite": 13,
-    "count": 0,
+    "count": 1,
     "location": [
       520,
       320
-    ]
+    ],
+    "categories": []
   },
   {
     "suite": 14,
-    "count": 0,
+    "count": 2,
     "location": [
       535,
       235
-    ]
+    ],
+    "categories": []
   },
   {
     "suite": 15,
-    "count": 0,
+    "count": 1,
     "location": [
       650,
       250
-    ]
+    ],
+    "categories": []
   },
   {
     "suite": 16,
-    "count": 0,
+    "count": 1,
     "location": [
       650,
       165
-    ]
+    ],
+    "categories": []
   },
   {
     "suite": 17,
@@ -618,55 +634,62 @@ const suites = [
     "location": [
       535,
       165
-    ]
+    ],
+    "categories": []
   },
   {
     "suite": 18,
-    "count": 0,
+    "count": 1,
     "location": [
       730,
       165
-    ]
+    ],
+    "categories": []
   },
   {
     "suite": 19,
-    "count": 0,
+    "count": 1,
     "location": [
       770,
       60
-    ]
+    ],
+    "categories": []
   },
   {
     "suite": 20,
-    "count": 0,
+    "count": 2,
     "location": [
       705,
       60
-    ]
+    ],
+    "categories": []
   },
   {
     "suite": 21,
-    "count": 0,
+    "count": 1,
     "location": [
       620,
       60
-    ]
+    ],
+    "categories": []
   },
   {
     "suite": 22,
-    "count": 0,
+    "count": 1,
     "location": [
       540,
       65
-    ]
+    ],
+    "categories": []
   },
   {
     "suite": 23,
-    "count": 0,
+    "count": 2,
     "location": [
       460,
       60
-    ]
+    ],
+    "categories": []
   },
   {
     "suite": 24,
@@ -674,63 +697,71 @@ const suites = [
     "location": [
       390,
       60
-    ]
+    ],
+    "categories": []
   },
   {
     "suite": 25,
-    "count": 0,
+    "count": 2,
     "location": [
       320,
       60
-    ]
+    ],
+    "categories": []
   },
   {
     "suite": 26,
-    "count": 0,
+    "count": 1,
     "location": [
       235,
       160
-    ]
+    ],
+    "categories": []
   },
   {
     "suite": 27,
-    "count": 0,
+    "count": 1,
     "location": [
       40,
       60
-    ]
+    ],
+    "categories": []
   },
   {
     "suite": 28,
-    "count": 0,
+    "count": 1,
     "location": [
       160,
       160
-    ]
+    ],
+    "categories": []
   },
   {
     "suite": 29,
-    "count": 0,
+    "count": 2,
     "location": [
       40,
       145
-    ]
+    ],
+    "categories": []
   },
   {
     "suite": 30,
-    "count": 0,
+    "count": 3,
     "location": [
       40,
       240
-    ]
+    ],
+    "categories": []
   },
   {
     "suite": 31,
-    "count": 0,
+    "count": 1,
     "location": [
       160,
       235
-    ]
+    ],
+    "categories": []
   },
   {
     "suite": 32,
@@ -738,39 +769,44 @@ const suites = [
     "location": [
       40,
       305
-    ]
+    ],
+    "categories": []
   },
   {
     "suite": 33,
-    "count": 0,
+    "count": 1,
     "location": [
       160,
       315
-    ]
+    ],
+    "categories": []
   },
   {
     "suite": 34,
-    "count": 0,
+    "count": 1,
     "location": [
       40,
       390
-    ]
+    ],
+    "categories": []
   },
   {
     "suite": 35,
-    "count": 0,
+    "count": 1,
     "location": [
       40,
       465
-    ]
+    ],
+    "categories": []
   },
   {
     "suite": 36,
-    "count": 0,
+    "count": 1,
     "location": [
       40,
       535
-    ]
+    ],
+    "categories": []
   },
   {
     "suite": 37,
@@ -778,15 +814,17 @@ const suites = [
     "location": [
       160,
       580
-    ]
+    ],
+    "categories": []
   },
   {
     "suite": 38,
-    "count": 0,
+    "count": 1,
     "location": [
       40,
       610
-    ]
+    ],
+    "categories": []
   },
   {
     "suite": 39,
@@ -794,23 +832,26 @@ const suites = [
     "location": [
       40,
       690
-    ]
+    ],
+    "categories": []
   },
   {
     "suite": 40,
-    "count": 0,
+    "count": 1,
     "location": [
       160,
       390
-    ]
+    ],
+    "categories": []
   },
   {
     "suite": 41,
-    "count": 0,
+    "count": 3,
     "location": [
       160,
       510
-    ]
+    ],
+    "categories": []
   },
   {
     "suite": 42,
@@ -818,47 +859,53 @@ const suites = [
     "location": [
       235,
       510
-    ]
+    ],
+    "categories": []
   },
   {
     "suite": 43,
-    "count": 0,
+    "count": 1,
     "location": [
       235,
       390
-    ]
+    ],
+    "categories": []
   },
   {
     "suite": 44,
-    "count": 0,
+    "count": 2,
     "location": [
       345,
       390
-    ]
+    ],
+    "categories": []
   },
   {
     "suite": 45,
-    "count": 0,
+    "count": 2,
     "location": [
       305,
       510
-    ]
+    ],
+    "categories": []
   },
   {
     "suite": 46,
-    "count": 0,
+    "count": 2,
     "location": [
       375,
       510
-    ]
+    ],
+    "categories": []
   },
   {
     "suite": 47,
-    "count": 0,
+    "count": 1,
     "location": [
       445,
       515
-    ]
+    ],
+    "categories": []
   },
   {
     "suite": 48,
@@ -866,7 +913,8 @@ const suites = [
     "location": [
       475,
       390
-    ]
+    ],
+    "categories": []
   },
   {
     "suite": 49,
@@ -874,26 +922,28 @@ const suites = [
     "location": [
       460,
       320
-    ]
+    ],
+    "categories": []
   },
   {
     "suite": 50,
-    "count": 0,
+    "count": 2,
     "location": [
       460,
-      235 
-    ]
+      235
+    ],
+    "categories": []
   },
   {
     "suite": 51,
-    "count": 0,
+    "count": 2,
     "location": [
       460,
-      165    
-    ]
+      165
+    ],
+    "categories": []
   }
-
-];
+]
 
 function init() {
   Papa.parse(public_spreadsheet_url_suites, {
@@ -903,37 +953,35 @@ function init() {
   })
 }
 
+var masterCategory = [];
 function parse() {
-  var category = [];
+  ResizeCanvas();
   for (var i = 0; i < masterData.length; i++) {
-    category.push(masterData[i].category);
+    masterCategory.push(masterData[i].category);
     addCategory(i);
   }
   for (var i = 0; i < data.length; i++) {
     fillCategory(i);
-    
   }
-  // for (var i = 0; i < suites.length; i++) {
-  //   AddressDraw(i, 'blue');
-  //   //AddressDrawBlue(i);
-  // }
 };
 
 function fillCategory(i) {
   const { category, companyName, suite } = data[i];
   const catList = category.replace(/\s/g,'').split(',');
   for (var j = 0; j < catList.length; j++) {
+    if (masterCategory.includes(catList[j]) && suite < 52) {
     //Render Text
-    const newDiv = document.createElement("p");
-    newDiv.setAttribute('class', 'tenant');
-    const text = document.createTextNode(`Suite ${suite} - ${companyName}`);
-    newDiv.appendChild(text);
-    const element = document.getElementById(`${catList[j]}List`);
-    element.appendChild(newDiv);
+      const newDiv = document.createElement("p");
+      newDiv.setAttribute('class', 'tenant');
+      const text = document.createTextNode(`Suite ${suite} - ${companyName}`);
+      newDiv.appendChild(text);
+      const element = document.getElementById(`${catList[j]}List`);
+      element.appendChild(newDiv);
 
-    //Draw Dots
-    const color = GetColor(catList[j]);
-    AddressDraw(suite, color);
+      //Draw Dots
+      const color = GetColor(catList[j]);
+      AddressDraw(suite, color, catList[j]);
+    }
   }
 }
 
@@ -958,32 +1006,24 @@ function addCategory(i) {
   circleDiv.style.backgroundColor = color;
 }
 
-//window.addEventListener('DOMContentLoaded', parse);
-
-function drawOnCanvas(dotX, dotY, color) {
-  const canvas = document.getElementById("mapCanvas");
-  const ctx = canvas.getContext("2d");
-  ctx.beginPath();
-  ctx.arc(dotX,dotY,10,0,2*Math.PI);
-  ctx.fillStyle = '#FF0000';
-  ctx.fill();
-  //console.log(suites[1][1])
-}
-
-function AddressDraw(i, color) {
+function AddressDraw(i, color, category) {
   let dotX = suites[i].location[0];
   const dotY = suites[i].location[1];
   const count = suites[i].count
+  const existingCategories = suites[i].categories;
+  if (!existingCategories.includes(category)) {
   dotX += (count * 10)
   suites[i].count += 1;
+  suites[i].categories.push(category);
   var c = document.getElementById("mapCanvas");
   var ctx = c.getContext("2d");
   ctx.beginPath();
   ctx.arc(dotX, dotY, 10, 0, 2 * Math.PI);
   ctx.fillStyle = color;
   ctx.fill();
+  }
 }
-
+console.log(suites)
 function ResizeCanvas() {
   const canvas = document.getElementById("mapCanvas");
   // Lookup the size the browser is displaying the canvas.
@@ -1004,11 +1044,6 @@ function GetColor(category) {
   const cat = masterData.find(el => el.category == category);
   const color = cat.color;
   return(color);
-  //console.log(color);
 }
 
-ResizeCanvas();
-parse();
-
-
-//drawOnCanvas(suiteLocation[1][1],suiteLocation[1][2], 'orange');
+window.addEventListener('DOMContentLoaded', parse);
