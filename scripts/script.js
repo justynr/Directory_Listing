@@ -945,13 +945,15 @@ const suites = [
   }
 ]
 
-let data
+let data;
 
 function init() {
   Papa.parse(public_spreadsheet_url_suites, {
     download: true,
     header: true,
-    complete: data
+    complete: function(results, public_spreadsheet_url_suites) {
+      data = results.data;
+    }
   })
 }
 
