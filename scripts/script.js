@@ -31,7 +31,7 @@ const masterData = [
 
 ]
 
-const data = [
+const Staticdata = [
   {
     "suite": 1,
     "ownerFirst": "Stavro",
@@ -486,7 +486,7 @@ const suites = [
   },
   {
     "suite": 1,
-    "count": 1,
+    "count": 0,
     "location": [
       240,
       580
@@ -495,7 +495,7 @@ const suites = [
   },
   {
     "suite": 2,
-    "count": 1,
+    "count": 0,
     "location": [
       270,
       695
@@ -513,7 +513,7 @@ const suites = [
   },
   {
     "suite": 4,
-    "count": 3,
+    "count": 0,
     "location": [
       390,
       580
@@ -522,7 +522,7 @@ const suites = [
   },
   {
     "suite": 5,
-    "count": 1,
+    "count": 0,
     "location": [
       350,
       695
@@ -531,7 +531,7 @@ const suites = [
   },
   {
     "suite": 6,
-    "count": 1,
+    "count": 0,
     "location": [
       425,
       695
@@ -540,7 +540,7 @@ const suites = [
   },
   {
     "suite": 7,
-    "count": 1,
+    "count": 0,
     "location": [
       490,
       665
@@ -549,7 +549,7 @@ const suites = [
   },
   {
     "suite": 8,
-    "count": 1,
+    "count": 0,
     "location": [
       525,
       580
@@ -558,7 +558,7 @@ const suites = [
   },
   {
     "suite": 9,
-    "count": 1,
+    "count": 0,
     "location": [
       555,
       510
@@ -567,7 +567,7 @@ const suites = [
   },
   {
     "suite": 10,
-    "count": 1,
+    "count": 0,
     "location": [
       590,
       450
@@ -576,7 +576,7 @@ const suites = [
   },
   {
     "suite": 11,
-    "count": 1,
+    "count": 0,
     "location": [
       620,
       390
@@ -585,7 +585,7 @@ const suites = [
   },
   {
     "suite": 12,
-    "count": 1,
+    "count": 0,
     "location": [
       650,
       310
@@ -594,7 +594,7 @@ const suites = [
   },
   {
     "suite": 13,
-    "count": 1,
+    "count": 0,
     "location": [
       520,
       320
@@ -603,7 +603,7 @@ const suites = [
   },
   {
     "suite": 14,
-    "count": 2,
+    "count": 0,
     "location": [
       535,
       235
@@ -612,7 +612,7 @@ const suites = [
   },
   {
     "suite": 15,
-    "count": 1,
+    "count": 0,
     "location": [
       650,
       250
@@ -621,7 +621,7 @@ const suites = [
   },
   {
     "suite": 16,
-    "count": 1,
+    "count": 0,
     "location": [
       650,
       165
@@ -639,7 +639,7 @@ const suites = [
   },
   {
     "suite": 18,
-    "count": 1,
+    "count": 0,
     "location": [
       730,
       165
@@ -648,7 +648,7 @@ const suites = [
   },
   {
     "suite": 19,
-    "count": 1,
+    "count": 0,
     "location": [
       770,
       60
@@ -657,7 +657,7 @@ const suites = [
   },
   {
     "suite": 20,
-    "count": 2,
+    "count": 0,
     "location": [
       705,
       60
@@ -666,7 +666,7 @@ const suites = [
   },
   {
     "suite": 21,
-    "count": 1,
+    "count": 0,
     "location": [
       620,
       60
@@ -675,7 +675,7 @@ const suites = [
   },
   {
     "suite": 22,
-    "count": 1,
+    "count": 0,
     "location": [
       540,
       65
@@ -684,7 +684,7 @@ const suites = [
   },
   {
     "suite": 23,
-    "count": 2,
+    "count": 0,
     "location": [
       460,
       60
@@ -702,7 +702,7 @@ const suites = [
   },
   {
     "suite": 25,
-    "count": 2,
+    "count": 0,
     "location": [
       320,
       60
@@ -711,7 +711,7 @@ const suites = [
   },
   {
     "suite": 26,
-    "count": 1,
+    "count": 0,
     "location": [
       235,
       160
@@ -720,7 +720,7 @@ const suites = [
   },
   {
     "suite": 27,
-    "count": 1,
+    "count": 0,
     "location": [
       40,
       60
@@ -729,7 +729,7 @@ const suites = [
   },
   {
     "suite": 28,
-    "count": 1,
+    "count": 0,
     "location": [
       160,
       160
@@ -738,7 +738,7 @@ const suites = [
   },
   {
     "suite": 29,
-    "count": 2,
+    "count": 0,
     "location": [
       40,
       145
@@ -747,7 +747,7 @@ const suites = [
   },
   {
     "suite": 30,
-    "count": 3,
+    "count": 0,
     "location": [
       40,
       240
@@ -756,7 +756,7 @@ const suites = [
   },
   {
     "suite": 31,
-    "count": 1,
+    "count": 0,
     "location": [
       160,
       235
@@ -774,7 +774,7 @@ const suites = [
   },
   {
     "suite": 33,
-    "count": 1,
+    "count": 0,
     "location": [
       160,
       315
@@ -783,7 +783,7 @@ const suites = [
   },
   {
     "suite": 34,
-    "count": 1,
+    "count": 0,
     "location": [
       40,
       390
@@ -792,7 +792,7 @@ const suites = [
   },
   {
     "suite": 35,
-    "count": 1,
+    "count": 0,
     "location": [
       40,
       465
@@ -801,7 +801,7 @@ const suites = [
   },
   {
     "suite": 36,
-    "count": 1,
+    "count": 0,
     "location": [
       40,
       535
@@ -819,7 +819,7 @@ const suites = [
   },
   {
     "suite": 38,
-    "count": 1,
+    "count": 0,
     "location": [
       40,
       610
@@ -837,7 +837,7 @@ const suites = [
   },
   {
     "suite": 40,
-    "count": 1,
+    "count": 0,
     "location": [
       160,
       390
@@ -846,7 +846,7 @@ const suites = [
   },
   {
     "suite": 41,
-    "count": 3,
+    "count": 0,
     "location": [
       160,
       510
@@ -864,7 +864,7 @@ const suites = [
   },
   {
     "suite": 43,
-    "count": 1,
+    "count": 0,
     "location": [
       235,
       390
@@ -873,7 +873,7 @@ const suites = [
   },
   {
     "suite": 44,
-    "count": 2,
+    "count": 0,
     "location": [
       345,
       390
@@ -882,7 +882,7 @@ const suites = [
   },
   {
     "suite": 45,
-    "count": 2,
+    "count": 0,
     "location": [
       305,
       510
@@ -891,7 +891,7 @@ const suites = [
   },
   {
     "suite": 46,
-    "count": 2,
+    "count": 0,
     "location": [
       375,
       510
@@ -900,7 +900,7 @@ const suites = [
   },
   {
     "suite": 47,
-    "count": 1,
+    "count": 0,
     "location": [
       445,
       515
@@ -927,7 +927,7 @@ const suites = [
   },
   {
     "suite": 50,
-    "count": 2,
+    "count": 0,
     "location": [
       460,
       235
@@ -936,7 +936,7 @@ const suites = [
   },
   {
     "suite": 51,
-    "count": 2,
+    "count": 0,
     "location": [
       460,
       165
@@ -945,11 +945,13 @@ const suites = [
   }
 ]
 
+console.log(suites)
+
 function init() {
   Papa.parse(public_spreadsheet_url_suites, {
     download: true,
     header: true,
-    complete: showInfo
+    complete: data
   })
 }
 
@@ -963,6 +965,12 @@ function parse() {
   for (var i = 0; i < data.length; i++) {
     fillCategory(i);
   }
+
+  //   for (var i = 0; i < suites.length; i++) {
+  //   AddressDraw(i, 'blue', 'cat');
+  //   //AddressDrawBlue(i);
+  // }
+
 };
 
 function fillCategory(i) {
@@ -1007,20 +1015,20 @@ function addCategory(i) {
 }
 
 function AddressDraw(i, color, category) {
-  let dotX = suites[i].location[0];
-  const dotY = suites[i].location[1];
-  const count = suites[i].count
   const existingCategories = suites[i].categories;
   if (!existingCategories.includes(category)) {
-  dotX += (count * 10)
-  suites[i].count += 1;
-  suites[i].categories.push(category);
-  var c = document.getElementById("mapCanvas");
-  var ctx = c.getContext("2d");
-  ctx.beginPath();
-  ctx.arc(dotX, dotY, 10, 0, 2 * Math.PI);
-  ctx.fillStyle = color;
-  ctx.fill();
+    let dotX = suites[i].location[0];
+    const dotY = suites[i].location[1];
+    const count = suites[i].count
+    dotX += (count * 10)
+    suites[i].count += 1;
+    suites[i].categories.push(category);
+    var c = document.getElementById("mapCanvas");
+    var ctx = c.getContext("2d");
+    ctx.beginPath();
+    ctx.arc(dotX, dotY, 10, 0, 2 * Math.PI);
+    ctx.fillStyle = color;
+    ctx.fill();
   }
 }
 console.log(suites)
