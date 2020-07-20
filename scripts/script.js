@@ -1,6 +1,6 @@
 const public_spreadsheet_url_suites = 'https://docs.google.com/spreadsheets/d/e/2PACX-1vTNik9F_6vPbPKCGneA6qMgExrkJhyl6MrzJhVj8PrK_T_EqqrFsgFJtPALhGkSw6mnX_nSuhknqZ0z/pubhtml?gid=0&single=true';
 const public_spreadsheet_url_master = 'https://docs.google.com/spreadsheets/d/e/2PACX-1vTNik9F_6vPbPKCGneA6qMgExrkJhyl6MrzJhVj8PrK_T_EqqrFsgFJtPALhGkSw6mnX_nSuhknqZ0z/pubhtml?gid=941655149&single=true';
-//const public_spreadsheet_url = "https://docs.google.com/spreadsheets/d/e/2PACX-1vTNik9F_6vPbPKCGneA6qMgExrkJhyl6MrzJhVj8PrK_T_EqqrFsgFJtPALhGkSw6mnX_nSuhknqZ0z/pubhtml";
+const public_spreadsheet_url = "https://docs.google.com/spreadsheets/d/e/2PACX-1vTNik9F_6vPbPKCGneA6qMgExrkJhyl6MrzJhVj8PrK_T_EqqrFsgFJtPALhGkSw6mnX_nSuhknqZ0z/pubhtml";
 
 const masterData = [
   {
@@ -946,14 +946,14 @@ const suites = [
 ]
 
 let data;
-const thisVersion = 1;
+const thisVersion = 2;
 
-async function init() {
-  Papa.parse(public_spreadsheet_url_suites, {
+function init() {
+  Papa.parse(public_spreadsheet_url, {
     download: true,
     header: true,
     complete: function(results) {
-      data = results;
+      data = results.data;
     }
   })
 }
@@ -1057,5 +1057,6 @@ function GetColor(category) {
   const color = cat.color;
   return(color);
 }
+
 
 window.addEventListener('DOMContentLoaded', parse);
