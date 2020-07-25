@@ -1,11 +1,16 @@
-body {
-  /*    background-image: url("https://res.cloudinary.com/justynr/image/upload/v1591895481/BG_zv367l.jpg"); */
+body {    
+  background:linear-gradient(
+    rgba(10,10,10,0.6),
+    rgba(0,0,0,0)),
+    url("https://res.cloudinary.com/justynr/image/upload/v1591895481/BG_zv367l.jpg");  
   margin: 40px;
   font-family: 'Roboto';
   color: #ececec;
   background: #253131;
+  /* background: rgba(10,10,10, 1); */
   overflow: hidden;
 }
+
 
 h3, th, tr {
   font-family: 'Roboto';
