@@ -4,6 +4,7 @@ body {
   font-family: 'Roboto';
   color: #ececec;
   background: #253131;
+  overflow: hidden;
 }
 
 h3, th, tr {
@@ -16,7 +17,7 @@ h3, th, tr {
   font-family: 'Roboto';
   color: #ececec;
   margin: 10px;
-  font-size: 65%;
+  font-size: 110%;
 }
 
 .row {
@@ -25,37 +26,39 @@ h3, th, tr {
 
 .column {
   flex: 50%;
-  padding: 5px;
+  padding-top: 0px;
+  padding-left: 0px;
   display: flex;
   justify-content: center;
 }
 
 .logo {
   width: 30%;
-  padding-left: 220px;
-  padding-top: 20px;
+  padding-left: 280px;
+  padding-top: 10px;
   align-content: center;
+  justify-content: center;
 }
 
 
 
 .listing {
-  margin-top: 25px;
+  margin-top: 20px;
 }
 
 .wrapper {
   display: grid;
   grid-template-columns: 310px 310px 310px;
   grid-template-rows: auto;
-  grid-gap: 20px;
+  grid-gap: 15px;
 }
 
 .box {
   background-color: rgba(10, 10, 10, 0.5);
   color: #fff;
   border-radius: 5px;
-  padding: 20px;
-  font-size: 150%;
+  padding: 10px;
+  /* font-size: 100%; */
 }
 
 .circle {
@@ -72,18 +75,19 @@ h3, th, tr {
 
 .title {
   content: '';
+  font-weight: 575;
   padding-left: 40px;
+  font-size: 170%
 }
 
 .tenantList {
   margin-bottom: 15px;
 }
 
-
 .map {
   width: 100%;
   padding-left: 10px;
-  padding-top: 30px;
+  padding-top: 0px;
 }
 
 .insideWrapper{ 
@@ -91,11 +95,11 @@ h3, th, tr {
   position:relative;}
 .coveredImage{ 
   width:100%; height:100%; 
-  position:absolute; top:30px; left:10px;
+  position:absolute; top:0px; left:10px;
 }
 .mapCanvas{ 
   width:100%; height:100%; 
-  position:absolute; top:30px; left:10px;
+  position:absolute; top:0px; left:10px;
   display:block;
   /* background-color: rgba(255,0,0,.1); */
 }

@@ -1030,26 +1030,48 @@ function addCategory(i) {
 function AddressDraw(i, color, category) {
   const existingCategories = suites[i].categories;
   if (!existingCategories.includes(category)) {
-    let dotX = suites[i].location[0];
-    const dotY = suites[i].location[1];
-    const count = suites[i].count
-    dotX += (count * 10)
+    const percent = getDotPercent(i);
+    let dotX = percent[0];
+    const dotY = percent[1];
+    const count = suites[i].count;
+    dotX += (count * percent[2])
     suites[i].count += 1;
     suites[i].categories.push(category);
     var c = document.getElementById("mapCanvas");
     var ctx = c.getContext("2d");
     ctx.beginPath();
-    ctx.arc(dotX, dotY, 10, 0, 2 * Math.PI);
+    ctx.arc(dotX, dotY, percent[2], 0, 2 * Math.PI);
     ctx.fillStyle = color;
     ctx.fill();
   }
 }
 
+function getDotPercent(suite) {
+  const image = document.getElementById("mapImage")
+  let {height, width} = image;
+  //console.log(suite)
+  let dotX = suites[suite].location[0];
+  let dotY = suites[suite].location[1];
+  dotX = (width/840) * dotX;
+  dotY = (height/769) * dotY;
+  const dotSize = (width/840) * 10;
+  //console.log(dotX, dotY, dotSize)
+  return([Math.round(dotX), Math.round(dotY), Math.round(dotSize)])
+}
+
 function ResizeCanvas() {
   const canvas = document.getElementById("mapCanvas");
   // Lookup the size the browser is displaying the canvas.
+  const image = document.getElementById("mapImage")
+
+  var imageWidth = image.width;
+  var imageHeight = image.height
+  let {height, width} = image;
   var displayWidth  = canvas.clientWidth;
   var displayHeight = canvas.clientHeight;
+
+  console.log(displayWidth)
+  console.log(height, width)
  
   // Check if the canvas is not the same size.
   if (canvas.width  != displayWidth ||
