@@ -478,22 +478,74 @@ const thisVersion = 3;
 
 var data;
 var masterData;
-async function init() {
-const dataToParse = await doCORSRequest({
+
+async function oldinit() {
+  masterData = await doCORSRequest({
+    method: 'GET',
+    url: public_spreadsheet_url_master,
+    data: ''
+  }).then(function(jsonMasterData) {
+    console.log(jsonMasterData)
+    masterData = jsonMasterData
+    return(jsonMasterData)
+  }).then(doCORSRequest({
     method: 'GET',
     url: public_spreadsheet_url_suites,
     data: ''
-  }, callBackThing
+  }).then(function(jsonSuiteData) {
+    console.log(jsonSuiteData)
+     parse(jsonSuiteData);
+  }).catch(function(err) {
+    console.error(`oh no! ${err}`)
+  })
   );
 
-  console.log(dataToParse)
-  //masterData = await parseData(public_spreadsheet_url_master);
+  // masterData = await parseData(callBackThing);
   //data = await parseData(public_spreadsheet_url_suites);
   //await getMasterData();
   //await parse(data);
+  //console.log(data)
+  //await doHttpRequest();
+}
+
+let newSuiteData;
+async function init() {
+ masterData = await doCORSRequest({    
+    method: 'GET',
+    url: public_spreadsheet_url_master,
+    data: ''
+  })
+  console.log(masterData)
+newSuiteData = await doCORSRequest({
+    method: 'GET',
+    url: public_spreadsheet_url_suites,
+    data: ''
+  })
+  console.log(newSuiteData)
+parse(newSuiteData);
+
+}
+
+var suiteData;
+var cors_api_url = 'https://cors-anywhere.herokuapp.com/';
+
+function doCORSRequest(options) {
+  return new Promise(function (resolve, reject) {
+    var x = new XMLHttpRequest();
+  x.open(options.method, cors_api_url + options.url);
+  x.send(options.data);
+  x.onload = function printResult() {
+    suiteData = x.responseText
+    const jsonData = Papa.parse(suiteData, {header: true} )
+    console.log(jsonData.data)
+    resolve(jsonData.data)
+  };
+  x.onerror = function () {reject()};
+})
 }
 
 //CorsProxy(url)
+
 
 const parseData = (file) => {
   return new Promise((resolve) => {
@@ -511,20 +563,21 @@ const parseData = (file) => {
 
 var masterCategory = [];
 
-
 function parse(data) {
+  console.log("I'm in the parse!", newSuiteData[1])
+  console.log(masterData.length)
   ResizeCanvas();
   for (var i = 0; i < masterData.length; i++) {
     masterCategory.push(masterData[i].mastercategory);
     addCategory(i, masterData);
   };
-  for (var i = 0; i < data.length; i++) {
+  for (var i = 1; i < data.length; i++) {
     fillCategory(i);
   };
 };
 
 function fillCategory(i) {
-  const { category, companyName, suite } = data[i];
+  const { category, companyName, suite } = newSuiteData[i];
   const catList = category.replace(/\s/g,'').split(',');
   for (var j = 0; j < catList.length; j++) {
     if (masterCategory.includes(catList[j]) && suite < 52) {
@@ -627,19 +680,7 @@ function GetColor(category) {
 }
 
 
-var suiteData;
-var cors_api_url = 'https://cors-anywhere.herokuapp.com/';
 
-async function doCORSRequest(options, printResult) {
-  var x = new XMLHttpRequest();
-  x.open(options.method, cors_api_url + options.url);
-  x.send(options.data);
-  x.onload = x.onerror = async function printResult() {
-    console.log(x.responseText)
-    suiteData = x.responseText
-    return(x.responseText)
-  }
-}
 
 async function OlddoCORSRequest(options, printResult) {
   console.log("options", options)
