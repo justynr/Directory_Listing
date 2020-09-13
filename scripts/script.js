@@ -515,13 +515,12 @@ async function init() {
     url: public_spreadsheet_url_master,
     data: ''
   })
-  console.log(masterData)
 newSuiteData = await doCORSRequest({
     method: 'GET',
     url: public_spreadsheet_url_suites,
     data: ''
   })
-  console.log(newSuiteData)
+
 parse(newSuiteData);
 
 }
@@ -537,7 +536,6 @@ function doCORSRequest(options) {
   x.onload = function printResult() {
     suiteData = x.responseText
     const jsonData = Papa.parse(suiteData, {header: true} )
-    console.log(jsonData.data)
     resolve(jsonData.data)
   };
   x.onerror = function () {reject()};
@@ -564,8 +562,6 @@ const parseData = (file) => {
 var masterCategory = [];
 
 function parse(data) {
-  console.log("I'm in the parse!", newSuiteData[1])
-  console.log(masterData.length)
   ResizeCanvas();
   for (var i = 0; i < masterData.length; i++) {
     masterCategory.push(masterData[i].mastercategory);
